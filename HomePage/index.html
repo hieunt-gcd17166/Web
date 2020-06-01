@@ -1,0 +1,418 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/signup.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row header-container">
+            <div class="col-lg-2" style="display: flex;">
+                <img src="https://templates.joomla-monster.com/joomla30/jm-classifiedads/images/logo.png" style="margin: auto auto auto 0;">
+            </div>
+            <div class="col-lg-10">
+                <div class="searching-container">
+                    <div class="keyword-container option-container">
+                        <input type="text" placeholder="Keyword" />
+                    </div>
+                    <div class="location-container option-container">
+                        <input type=text placeholder="Location" />
+                    </div>
+                    <div class="distance-container option-container">
+                        <select>
+                          <option value="range">Range</option>
+                          <option value="5km">5 km</option>
+                          <option value="10km">10 km</option>
+                          <option value="20km">20 km</option>
+                        </select>
+                    </div>
+                    <div class="category-container option-container">
+                        <select>
+                            <option value="">Category</option>
+                            <option value="48">Electronics</option>
+                            <option value="49">Home &amp; Garden</option>
+                            <option value="50">Sports &amp; Outdoors</option>
+                            <option value="77">Clothing</option>
+                            <option value="69">Books</option>
+                            <option value="76">Beauty &amp; Health</option>
+                        </select>
+                    </div>
+                    <div class="btn-search"></div>
+
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                        <div id="id01" class="modal">
+                          
+                          <form class="modal-content animate" action="/action_page.php" method="post">
+                            <div class="imgcontainer">
+                              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>                     
+                            </div>
+
+                            <div class="container">
+                              <label for="uname"><b>Username</b></label>
+                              <input type="text" placeholder="Enter Username" name="uname" required>
+
+                              <label for="psw"><b>Password</b></label>
+                              <input type="password" placeholder="Enter Password" name="psw" required>
+                                
+                              <button type="submit">Login</button>
+                              <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                              </label>
+                            </div>
+                            <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+                                <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">SignUp</button>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="featured-classifieds-container section-odd">
+            <span>Featured classifieds</span>
+            <div class="featured-categories-container">
+                <div class="featured-preview">
+                    <div class="featured-preview-footer">
+                        <span>Sail boat</span>
+                    </div>
+                </div>
+                <div class="featured-preview" style="background: #000 url('images/featured-preview-2.jpg') no-repeat 100% 100%;">
+                    <div class="featured-preview-footer">
+                        <span>Tennis racket</span>
+                    </div>
+                </div>
+                <div class="featured-preview" style="background: #000 url('images/featured-preview-3.jpg') no-repeat 100% 100%;">
+                    <div class="featured-preview-footer">
+                        <span>SLR camera Nikon</span>
+                    </div>
+                </div>
+                <div class="featured-preview" style="background: #000 url('images/featured-preview-4.jpg') no-repeat 100% 100%;">
+                    <div class="featured-preview-footer">
+                        <span>Glass ceramic cooker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="browse-categories-container section-even">
+            <span>Browse categories</span>
+            <div class="categories-list-container">
+                <div class="category-preview">
+                    <div class="cat-preview-header">
+                        <img src="images/ic-computer.png" >
+                        ELECTRONICS
+                    </div>
+                    <div class="cat-preview-body">
+                        <div class="link">Audio & HiFi</div>
+                        <div class="link">Camera & Photo (3)</div>
+                        <div class="link">Electronics Accessories (1)</div>
+                        <div class="link">Phones & Accessories (1)</div>
+                        <div class="link">Sat Nav & Car Electronics</div>
+                        <div class="link">TV & Home Cinema (2)</div>
+                    </div>
+                    <div class="cat-preview-footer">
+                        <div class="btn-see-all-ads">SEE ALL ADS</div>
+                    </div>
+                </div>
+                <div class="category-preview">
+                    <div class="cat-preview-header">
+                        <img src="images/ic-home.png" >
+                        HOME & GARDEN
+                    </div>
+                    <div class="cat-preview-body">
+                        <div class="link">Arts, Crafts & Sewing</div>
+                        <div class="link">Bedding & Linens</div>
+                        <div class="link">Cooking & Dining (1)</div>
+                        <div class="link">Furniture</div>
+                        <div class="link">Home Accessories (1)</div>
+                        <div class="link">Kitchen (3)</div>
+                    </div>
+                    <div class="cat-preview-footer">
+                        <div class="btn-see-all-ads">SEE ALL ADS</div>
+                    </div>
+                </div>
+                <div class="category-preview">
+                    <div class="cat-preview-header">
+                        <img src="images/ic-sport.png" >
+                        SPORTS & OUTDOORS
+                    </div>
+                    <div class="cat-preview-body">
+                        <div class="link">Camping & Hiking</div>
+                        <div class="link">Cycling</div>
+                        <div class="link">Fitness (2)</div>
+                        <div class="link">Outdoor Clothing (4)</div>
+                        <div class="link">Outdoor Shoes</div>
+                        <div class="link">Sports Technology</div>
+                    </div>
+                    <div class="cat-preview-footer">
+                        <div class="btn-see-all-ads">SEE ALL ADS</div>
+                    </div>
+                </div>
+                <div class="category-preview">
+                    <div class="cat-preview-header">
+                        <img src="images/ic-clothing.png" >
+                        CLOTHING
+                    </div>
+                    <div class="cat-preview-body">
+                        <div class="link">Baby (1)</div>
+                        <div class="link">Boys</div>
+                        <div class="link">Girls (2)</div>
+                        <div class="link">Luggage</div>
+                        <div class="link">Men (1)</div>
+                        <div class="link">Women (2)</div>
+                    </div>
+                    <div class="cat-preview-footer">
+                        <div class="btn-see-all-ads">SEE ALL ADS</div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a class="btn-see-all-catogories">SEE ALL CATEGORIES</a>
+            </div>
+        </div>
+        <div class="classifieds-container section-odd">
+            <span>Classifieds</span>
+            <div class="classifieds-list-container">
+                <div class="classifieds-preview">
+                    <div class="classifieds-preview-image" style="background: url('images/featured-preview-5.jpg') no-repeat 100% 100%;">
+                        <div class="classifieds-preview-heart">
+                        </div>
+                    </div>
+                    <div class="classifieds-preview-information">
+                        <span class="classifieds-preview-title"></span> <a href="fast.html" title="">FAST SKATEBOARD</a>
+                        <span class="classifieds-preview-subtitle">Outdoor Clothing <i class="fas fa-map-marker"></i> New York</span>
+                        <span class="classifieds-preview-price">$ 400.00</span>
+                    </div>
+                </div>
+                <div class="classifieds-preview">
+                    <div class="classifieds-preview-image" style="background: url('images/featured-preview-6.jpg') no-repeat 100% 100%;">
+                        <div class="classifieds-preview-heart">
+                        </div>
+                    </div>
+                    <div class="classifieds-preview-information">
+                        <span class="classifieds-preview-title"></span> <a href="guitar.html" title="">CLASSIC GUITAR</a>
+                        <span class="classifieds-preview-subtitle">Outdoor Clothing <i class="fas fa-map-marker"></i> New York</span>
+                        <span class="classifieds-preview-price">$ 115.99</span>
+                    </div>
+                </div>
+                <div class="classifieds-preview">
+                    <div class="classifieds-preview-image" style="background: url('images/featured-preview-7.jpg') no-repeat 100% 100%;">
+                        <div class="classifieds-preview-heart">
+                        </div>
+                    </div>
+                    <div class="classifieds-preview-information">
+                        <span class="classifieds-preview-title"></span> <a href="canon.html" title="">CANON CAMERA</a>
+                        <span class="classifieds-preview-subtitle">Camera & Photo <i class="fas fa-map-marker"></i> New York</span>
+                        <span class="classifieds-preview-price">$ 400.00</span>
+                    </div>
+                </div>
+                <div class="classifieds-preview">
+                    <div class="classifieds-preview-image" style="background: url('images/featured-preview-3.jpg') no-repeat 100% 100%;">
+                        <div class="classifieds-preview-heart">
+                        </div>
+                    </div>
+                    <div class="classifieds-preview-information">
+                        <span class="classifieds-preview-title"></span> <a href="nikon.html" title="">SLR CAMERA NIKON</a>
+                        <span class="classifieds-preview-subtitle">Camera & Photo <i class="fas fa-map-marker"></i> New York</span>
+                        <span class="classifieds-preview-price">$ 400.00</span>
+                    </div>
+                </div>
+                <div class="classifieds-preview">
+                    <div class="classifieds-preview-image" style="background: url('images/featured-preview-1.jpg') no-repeat 100% 100%;">
+                        <div class="classifieds-preview-heart">
+                        </div>
+                    </div>
+                    <div class="classifieds-preview-information">
+                        <span class="classifieds-preview-title"></span> <a href="boat.html" title="">SAIL BOAT</a>
+                        <span class="classifieds-preview-subtitle">Outdoor Clothing <i class="fas fa-map-marker"></i> New York</span>
+                        <span class="classifieds-preview-price">$ 150</span>
+                    </div>
+                </div>
+                <div class="classifieds-preview">
+                    <div class="classifieds-preview-image" style="background: url('images/featured-preview-2.jpg') no-repeat 100% 100%;">
+                        <div class="classifieds-preview-heart">
+                        </div>
+                    </div>
+                    <div class="classifieds-preview-information">
+                        <span class="classifieds-preview-title"></span> <a href="tennis.html" title="">TENNIS RACKET</a>
+                        <span class="classifieds-preview-subtitle">Outdoor Clothing <i class="fas fa-map-marker"></i> New York</span>
+                        <span class="classifieds-preview-price">$ 115.99</span>
+                    </div>
+                </div>
+                <div class="classifieds-preview">
+                    <div class="classifieds-preview-image" style="background: url('images/featured-preview-8.jpg') no-repeat 100% 100%;">
+                        <div class="classifieds-preview-heart">
+                        </div>
+                    </div>
+                    <div class="classifieds-preview-information">
+                        <span class="classifieds-preview-title"></span> <a href="iphone.html" title="">APPLE IPHONE 5S</a>
+                        <span class="classifieds-preview-subtitle">Camera & Photo <i class="fas fa-map-marker"></i> New York</span>
+                        <span class="classifieds-preview-price">$ 300</span>
+                    </div>
+                </div>
+                <div class="classifieds-preview">
+                    <div class="classifieds-preview-image" style="background: url('images/featured-preview-9.jpg') no-repeat 100% 100%;">
+                        <div class="classifieds-preview-heart">
+                        </div>
+                    </div>
+                    <div class="classifieds-preview-information">
+                        <span class="classifieds-preview-title"></span> <a href="men.html" title="">MEN TOOLS</a>
+                        <span class="classifieds-preview-subtitle">Kitchen <i class="fas fa-map-marker"></i> Idaho</span>
+                        <span class="classifieds-preview-price">$ 300</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ads-by-location-container section-even">
+            <span>Ads by location</span>
+            <div class="ads-by-location-list-container">
+                <div class="ads-by-location-preview">
+                    <span>ALASKA</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="ads-by-location-preview">
+                    <span>ARIZONA</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="ads-by-location-preview">
+                    <span>CALIFORNIA</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="ads-by-location-preview">
+                    <span>COLORADO</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="ads-by-location-preview">
+                    <span>FLORIDA</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="ads-by-location-preview">
+                    <span>HAWAII</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="ads-by-location-preview">
+                    <span>IDAHO</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="ads-by-location-preview">
+                    <span>ILLINOIS</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="ads-by-location-preview">
+                    <span>KANSAS</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="ads-by-location-preview">
+                    <span>MAINE</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="ads-by-location-preview">
+                    <span>NEVADA</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="ads-by-location-preview">
+                    <span>NEW JERSEY</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="ads-by-location-preview">
+                    <span>NEW YORK</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="ads-by-location-preview">
+                    <span>OHIO</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="ads-by-location-preview">
+                    <span>TEXAS</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="ads-by-location-preview">
+                    <span>WASHINGTON</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="text-center">
+                <a class="btn-see-all-ads">SEE ALL ADS</a>
+            </div>
+        </div>
+        <div class="introduction-container">
+            <span class="introduction-title">Are you ready to come to our world?</span>
+            <span class="introduction-subtitle">We provide our customers with the best service as well as the best quality products</span>
+            <a>Contact Us</a>
+        </div>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--Back to Top Button Start-www.thenaynhe.com--><script>
+
+</body>
+</html>
